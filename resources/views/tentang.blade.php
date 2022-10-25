@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Aplikasi Perpustakaan</title>
+    <title>tentang</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -84,15 +84,15 @@
 
         <div class="content">
             <div class="title m-b-md">
-                WELCOME
+                TENTANG
             </div>
             <div class="links">
                 <a href="{{ _('welcome') }}">Halaman Utama</a>
                 <a href="{{ _('tentang') }}">Tentang Kami</a>
-                <a href="{{ url('/') }}">Data Perpustakaan</a>
+                <a href="{{ url('/home') }}">Data Perpustakaan</a>
             </div>
         </div>
-    </div>home
+    </div>
 </body>
 
 </html>
