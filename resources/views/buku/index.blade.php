@@ -32,7 +32,7 @@
                                 @foreach ($buku as $item)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{  $item->judul }}</td>
+                                    <td>{{  $item->nama }}</td>
                                     <td>{{ $item->penulis }}</td>
                                     <td>{{ $item->harga }}</td>
                                     <td>{{ $item->tgl_terbit }}</td>
@@ -61,7 +61,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form method="POST" action="{{ route('TambahBuku')}}" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('bukutambah')}}" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
                             <label for="judul">Judul</label>
@@ -69,13 +69,13 @@
                                 name="nama">
                                 <label for="penulis">Penulis</label>
                             <input type="text" class="form-control" id="penulis" aria-describedby="nameHelp"
-                                name="nama">
+                                name="penulis">
                                 <label for="harga">Harga</label>
                             <input type="number" class="form-control" id="harga" aria-describedby="namelHelp"
-                                name="nama">
+                                name="harga">
                                 <label for="tanggal">Tanggal Terbit</label>
                             <input type="date" class="form-control" id="tanggal" aria-describedby="nameHelp"
-                                name="nama">
+                                name="tgl_terbit">
                         </div>
                         <button type="submit" class="btn btn-primary">Tambah</button>
                         <button class="btn btn-danger" data-dismiss="modal">batal</button>

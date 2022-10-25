@@ -38,6 +38,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // buku
 Route::get('/buku', [App\Http\Controllers\BukuController::class, 'index'])->name('buku');
-Route::post('/buku', [App\Http\Controllers\BukuController::class, 'store'])->name('TambahBuku');
+Route::post('/buku', [App\Http\Controllers\BukuController::class, 'store'])->name('bukutambah');
 
 

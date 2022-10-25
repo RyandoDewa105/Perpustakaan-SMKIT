@@ -37,9 +37,6 @@ class BukuController extends Controller
      */
     public function store(Request $request)
     {
-        $validasi = $this->validate($request,[
-            'nama'=> 'required',
-            ]);
         buku::create($request->all());
         return redirect()->route('buku');
     }
